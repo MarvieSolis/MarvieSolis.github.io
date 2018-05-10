@@ -1,0 +1,386 @@
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #777777;
+    text-decoration: none;
+}
+
+header {
+    overflow: hidden;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: #cccccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    clear: both;
+    z-index: 1;
+}
+
+header #myname {
+    font-size: 34px;
+    font-weight: bold;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 10%;
+    position: relative;
+}
+
+header #myname h1 {
+    color: white;
+    background-color: #4aaaa5;
+    padding: 14px 16px;
+}
+
+header #links {
+    float: right;
+    display: inline-block;
+    padding: 25px 16px;
+    margin-right: 17%;
+    position: relative;
+}
+
+header #links .index {
+    padding-right: 20px;
+}
+
+header #links .contact {
+    padding-right: 20px;
+}
+
+header #links .portfolio {
+    padding-right: 20px;
+}
+
+hr {
+    display: block;
+    border: 2px solid #ddd;
+}
+
+footer {
+    background-color: #666666;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    color: #ddd;
+    border-top: 10px;
+    border-top-color: #4aaaa5;
+    border-style: solid;
+    padding-top: 30px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+html {
+    background-image: url('../images/background2.jpg');
+    background-repeat: repeat;
+}
+
+body .main {
+    width: 960px;
+    padding: 50px;
+    padding-bottom: 90px;
+    margin: 100px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border: 1px;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+body .main .pic {
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+
+body .main .first {
+    display: inline;
+}
+
+body .main p {
+    line-height: 1.5em;
+    margin-top: 18px;
+}
+
+body .main h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+body form #name {
+    width: 960px;
+}
+
+body form #email {
+    width: 960px;
+}
+
+body form #message {
+    width: 960px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body form #submit {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 32px;
+    border: none;
+    font-size: 16px;
+}
+
+
+body .main {
+    height: 400px;
+}
+
+body .main #images #soundcloud {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+
+body .main #images #soundcloud #music {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: oblique;
+}
+
+
+body .main #images #youtube  {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+
+body .main #images #youtube #dance  {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: oblique;
+}
+
+
+body .main #images #LinkedIn {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+
+body .main #images #LinkedIn #work {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: oblique;
+}
+
+
+body .main #images #github {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+
+body .main #images #github #git {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: oblique;
+}
+
+
+@media screen and (max-width: 980px) {
+    #index {
+        width: 600px;
+        height: 540px;
+    }
+
+    #contact {
+        width: 600px;
+        height: 400px;
+    }
+
+    #portfolio {
+        width: 600px;
+        height: 450px;
+    }
+    
+
+    body form #message {
+        width: 600px;
+    }
+
+    body form #email {
+        width: 600px;
+    }
+
+    body form #name {
+        width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #index {
+        width: 468px;
+        height: 660px;
+    }
+
+    #contact {
+        width: 468px;
+        height: 400px;
+    }
+
+    #portfolio {
+        width: 468px;
+        height: 450px;
+    }
+
+    header #links {
+        float: right;
+        display: inline-block;
+        padding: 25px 16px;
+        margin-right: 0%;
+        position: relative;
+    }
+
+    body form #message {
+        width: 468px;
+    }
+
+    body form #email {
+        width: 468px;
+    }
+
+    body form #name {
+        width: 468px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+    #index {
+        width: 350px;
+        height: 1080px;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+
+    #headshot {
+        width: 350px;
+        height: 350px;
+    }
+
+    #contact {
+        width: 350px;
+        height: 400px;
+        margin-left: 50px;
+        margin-top: 150px;
+
+    }
+
+    #portfolio {
+        width: 350px;
+        height: 820px;
+        margin-left: 50px;
+        margin-top: 150px;
+
+    }
+
+    header #links {
+        float: right;
+        display: inline-block;
+        padding: 25px 16px;
+        margin-right: 0%;
+        position: relative;
+    }
+
+    body form #message {
+        width: 350px;
+    }
+
+    body form #email {
+        width: 350px;
+    }
+
+    body form #name {
+        width: 350px;
+    }
+
+    header {
+        height:140px;
+        position: static;
+    }
+
+    header #myname {
+        font-size: 34px;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+        position:relative;
+        margin: 0 auto;
+        background-color: #4aaaa5;
+        width: 100%;
+        right: 60px;
+    }
+
+    header #myname h1 {
+        color: white;
+        background-color: #4aaaa5;
+    }
+
+    header #links {
+        display: inline-block;
+        padding: 25px 16px;
+        margin-right:25%;
+        position: static;
+        top: 70px;
+    }
+
+
+}
