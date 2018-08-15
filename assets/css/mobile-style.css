@@ -678,6 +678,29 @@ a {
 	color:rgba(0, 0, 0, 0.4);
 }
 
+.skillBox {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#skillIcon {
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+
+#skillText {
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.col-sm-2{
+    width:50%;
+    height:auto;
+}
+
 
 
 

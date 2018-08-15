@@ -668,5 +668,20 @@ a {
 }
 
 
+.skillBox {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
+#skillIcon {
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
 
+#skillText {
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
