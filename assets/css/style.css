@@ -313,6 +313,8 @@ html,body
     color: white;
     padding: 0px 10px 0px 20px;
     margin: 0px 20px 0px 20px;
+    text-align: center;
+
 }
 
 
@@ -686,3 +688,55 @@ a {
     font-size: 20px;
 }
 
+
+
+/* PASSIONS */
+#passions {
+    margin-top: 100px;
+}
+
+.passion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 250px;
+}
+
+.passionHead {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+#cars {
+    background-image: url('../images/cars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#dance {
+    background-image: url('../images/dance.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#videogames {
+    background-image: url('../images/videogames.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#emailLink {
+    transition: all 1s;
+}
+
+#emailLink:hover {
+    color: #0adecb;
+    text-decoration: none;
+}
