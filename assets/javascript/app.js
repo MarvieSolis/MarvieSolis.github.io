@@ -1,10 +1,10 @@
 
 // Wait for window load
-var loadPage = function() {
-    $(".se-pre-con").fadeOut("slow");
-}
+// var loadPage = function() {
+//     $(".se-pre-con").fadeOut("slow");
+// }
 
-setTimeout(loadPage, 3000);
+// setTimeout(loadPage, 3000);
 
 $("#home").click(function (event) {
 
