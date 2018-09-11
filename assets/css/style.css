@@ -3,18 +3,6 @@ html,body
     overflow-x: hidden; 
 }
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url("../images/loading.gif") center no-repeat rgba(27,29,31);
-}
-
 
 
 /* Animations */
@@ -106,7 +94,7 @@ html,body
     font-family: 'Raleway', sans-serif;
     color: white;
     margin-top: 25px;
-    padding-right: 60px;
+    padding-right: 30px;
     display: inline-block;
     vertical-align: middle;
     -webkit-transition: color linear 1s; 
@@ -739,4 +727,89 @@ a {
 #emailLink:hover {
     color: #0adecb;
     text-decoration: none;
+}
+
+@media only screen and (max-width : 750px) {
+    #navbuttons {
+        display: none;
+    }
+
+    #dropdownMenuButton {
+        display: inline-block;
+    }
+
+    #dropButton {
+        color: white;
+        background-color: #000;
+
+        transition: all 1s;
+    }
+
+    #dropButton:hover {
+        color: #0adecb;
+    }
+
+    #firstSection {
+        background-image: url("../images/background2.jpg");
+        background-repeat: none;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #secondSection {
+        background-image: url("../images/slide1mobile.png");
+        background-repeat: none;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100px;
+        width: 100%;
+        position: relative;
+    }
+
+    .col-sm-2{
+        width:50%;
+        height:auto;
+    }
+
+    #thirdSection {
+        background-image: url("../images/slide3mobile.jpg");
+        background-repeat: none;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100px;
+        width: 100%;
+        position: relative;
+    }
+
+    #fourthSection {
+        background-image: url("../images/slide2mobile.jpg");
+        background-repeat: none;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100px;
+        width: 100%;
+        position: relative;
+    }
+
+    #link {
+        font-size: 20px;
+    }
+
+    #emailText {
+        font-size: 12px;
+    }
+
+    #copyrightText {
+        font-size: 12px;
+    }
+
+    
 }
