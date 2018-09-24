@@ -1,10 +1,11 @@
 
 // Wait for window load
-// var loadPage = function() {
-//     $(".se-pre-con").fadeOut("slow");
-// }
+var loadPage = function() {
+    $("#loaderContainer").slideUp("slow");
+    $("#all").css("display", "block")
+}
 
-// setTimeout(loadPage, 3000);
+setTimeout(loadPage, 3000);
 
 function oneTofour() {
     document.getElementById("project1Overlay").style.width = "0%";
