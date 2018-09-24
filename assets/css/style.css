@@ -788,6 +788,7 @@ a {
     margin-bottom: 30px;
     color: #EEEEEE;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .projectNav {
@@ -820,11 +821,13 @@ a {
     border-bottom: solid 2px #111;
     color: #EEEEEE;
     width: 100%;
+    font-weight: bold;
 }
 
 .projectDetails {
     color: #EEEEEE;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .projectDetailsText {
