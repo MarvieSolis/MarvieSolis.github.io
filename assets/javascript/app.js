@@ -1,6 +1,7 @@
 
 // Wait for window load
 var loadPage = function() {
+    $(".loader").fadeOut("slow");
     $("#loaderContainer").slideUp("slow");
     $("#all").css("display", "block")
 }
