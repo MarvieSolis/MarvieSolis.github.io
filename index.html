@@ -8,7 +8,7 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 
     <!--favicon-->
@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/animations.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/mobile-style.css">
 
 
 
@@ -122,6 +121,7 @@
 
     </div>
 
+
     <div class="container-fluid" id="aboutmeSection">
         <a id="aboutMeLink" name="aboutMe"></a>
 
@@ -133,17 +133,19 @@
                 </div>
             </div>
             <div class="animated fadeInRight col-md-7">
-                <div class="row justify-content-center">
+                <div id="aboutMeBioSection">
                     <h1 id="aboutmeHeader">About Me</h1>
                 </div>
                 <div class="row justify-content-center">
                     <hr id="aboveBio">
-                    <p id="aboutmeBio">I am a fullstack web developer with an educational background in Electrical Engineering
-                        who specializes in frontend development. Based on my previous experiences throughout my career, I
-                        possess strong skills in project management, team work, and time efficiency. I am proficient in front-end
-                        design with experience in back-end development as well. I excel in utilizing Bootstrap and Javascript
-                        to create websites and applications that are user friendly. I am currently looking into React as
-                        well as database and API related programming.
+                    <p id="aboutmeBio">Hello! I am a full-stack web developer with an educational background in Electrical
+                        Engineering. I strive to create dynamic, unique, and visually appealing websites and applications
+                        that offer a great user experience. I am a lifelong student, constantly analyzing and utilizing current
+                        and popular technologies while also studying and implementing new and upcoming methods. I specialize
+                        in frontend development, being especially proficient in Bootstrap 4 and currently studying ReactJS.
+                        I also have experience in backend development creating Express servers, working with SQL and Non-SQL
+                        databases, and using third party APIs on various projects. Aside from web development, I am also
+                        a dancer, DJ, gamer, and car enthusiast.
                     </p>
                 </div>
             </div>
@@ -189,7 +191,7 @@
 
     <div class="container-fluid" id="secondSection"></div>
 
-    <div id="skillWrap" class="container-fluid" id="skillsSection" style="background-color: #323232; padding-top: 50px; padding-bottom: 50px;">
+    <div id="skillWrap" class="container-fluid" id="skillsSection" style="background-color: #111111;  padding-top: 50px; padding-bottom: 50px;">
         <a id="skillsLink" name="skills"></a>
         <div class="animatedParent row justify-content-center">
             <div class="col-md-auto">
@@ -276,78 +278,504 @@
 
     <div class="container-fluid" id="thirdSection"></div>
 
+    <!-- Rentployment -->
+    <div id="project1Overlay" class="overlay">
 
-    <div class="container-fluid" id="portfolioSection">
-        <a id="portfolioLink" name="projects"></a>
-        <div class="animatedParent container-fluid" id="portfolioHeaderMain">
+        <!-- Overlay content -->
+        <div class="container-fluid overlay-content">
             <div class="row justify-content-center">
-                <h1 class="animated growIn" id="portfolioHeader">Projects</h1>
+                <div class="col-md-10">
+                    <h1 class="projectNumber">1 of 4</h1>
+                </div>
             </div>
-        </div>
-        <div class="animatedParent row justify-content-center">
-            <div class="col-md-auto" id="workLinks" align="center">
-                <div class="row justify-content-center">
-                    <div class="animated flipInY card" style="width: 13rem; height: 32rem;">
-                        <a href="https://lakegapo.github.io/rentployment/" target="_blank">
-                            <img class="card-img-top" src="./assets/images/rentployment.PNG" alt="Rentployment">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="projectHeading">Rentployment</h4>
-                            <p class="card-text">A web application that combines the tedious process of searching for a job
-                                and nearby housing, all in one search.</p>
-                            <a href="https://github.com/lakegapo/rentployment" target="_blank" class="repo">View Repo</a>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <button class="projectNav" onClick="oneTofour()">&larr;</button>
+                    <button class="projectNav" onClick="closeProject1()">&times;</button>
+                    <button class="projectNav" onClick="oneTotwo()">&rarr;</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 projectHeader">
+                    <h1>Rentployment</h1>
+                    <h6>by Team Something</h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 project">
+                    <h2 class="projectOverlayHeading">Project Description</h2>
+                    <p class="projectDescription">Rentployment is a website that allows users to simultaneously search for
+                        a job and housing in one area. It can be a difficult task job hunting. Searching for housing as well
+                        can be just as difficult. With Rentployment, we decided to take those two tasks and combine them
+                        into one easy-to-use search engine. This allows the user to fulfill their job search and find housing
+                        in the same general area of their desired job. The user is presented with data regarding the job
+                        such as the available position, company name, location, and website. As for housing, they are presented
+                        with a photo, location, and price. Due to the short time constraint and no allotted budget, our access
+                        to APIs were very limited.
+                    </p>
+                    <p class="projectDescription">Rentployment utilizes a variety of APIs to present it's data to the user.
+                        For accessing housing, we decided to use 9Flat's API. Although this API does not present permanent
+                        housing, it presents temporary housing similar to AirBnB. For accessing jobs, we utilized Github
+                        Job's API. Their job database consists of roughly 100 jobs so the selection is very miniscule. We
+                        also used a combination of the Leaflet Map API as well as Google Maps to create a map that drops
+                        a pin on the city of the job. All of this information is displayed in one screen where the user can
+                        easily access all of it.
+                    </p>
+                    <p class="projectDescription">For future developments, we wish to utilize more capable APIs to present
+                        more useful data. This includes a more detailed housing API that displays permanent housing and mortgage
+                        prices, or apartments for lease. It also includes a job API with a wider variety. Since this website
+                        was created with a focus on accessing APIs and frontend development, we also plan to expand the backend
+                        by adding on a database to allow users to create accounts, save jobs and housing, and share their
+                        findings with other users.
+                    </p>
+                    <h2 class="projectOverlayHeading">Screenshots</h2>
+                    <h6 class="screenshotCaption">Home Page: User enters desired job title and location.</h6>
+                    <img class="screenshot" src="./assets/screenshots/renploymentHome.PNG">
+                    <h6 class="screenshotCaption">Results Page: Jobs and housing data is displayed along with a pinned map.</h6>
+                    <img class="screenshot" src="./assets/screenshots/renploymentSearch.PNG">
+                </div>
+                <div class="col-md-4 project">
+                    <h2 class="projectOverlayHeading">Project Details</h2>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Role</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Frontend Developer, Project Lead</h6>
                         </div>
                     </div>
-                    <div class="animated flipInY card" style="width: 13rem; height: 32em;">
-                        <a href="https://shielded-brushlands-80704.herokuapp.com/" target="_blank">
-                            <img class="card-img-top" src="./assets/images/postit.png" alt="Post.It">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="projectHeading">Post.It</h4>
-                            <p class="card-text">A blogging site built from the ground up, utilizing a MySQL database, password
-                                encryption, and Handlebars
-                            </p>
-                            <a href="https://github.com/hvoncannon/project2" target="_blank" class="repo">View Repo</a>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Date</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">June 13, 2018</h6>
                         </div>
                     </div>
-                    <div class="animated flipInY card" style="width: 13rem; height: 32rem;">
-                        <a href="https://marvie-c-solis-news-scraper.herokuapp.com/" target="_blank">
-                            <img class="card-img-top" src="./assets/images/picknroll.png" alt="The Pick & Roll">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="projectHeading">The Pick & Roll</h4>
-                            <p class="card-text">A website built using handlebars, express, and mongoDB. Scrapes SBNation
-                                for basketball articles and allows users to comment.</p>
-                            <a href="https://github.com/MarvieSolis/mongodb-scraping" target="_blank" class="repo">View Repo</a>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Team Something</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Marvie Solis</h6>
+                            <h6 class="projectDetailsText">Jason Hong</h6>
+                            <h6 class="projectDetailsText">Eddie Borja</h6>
+                            <h6 class="projectDetailsText">Li Tian</h6>
+                            <h6 class="projectDetailsText">Fletcher Bunales</h6>
                         </div>
                     </div>
-                    <div class="animated flipInY card" style="width: 13rem; height: 32rem;">
-                        <a href="https://marviesolis.github.io/clicky-game/" target="_blank">
-                            <img class="card-img-top" src="./assets/images/clicky.png" alt="Clicky-Game: Fortnite Edition">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="projectHeading">Clicky-Game</h4>
-                            <p class="card-text">A Fortnite themed, memory based card game built using ReactJS where all
-                                cards must only be selected once.
-                            </p>
-                            <a href="https://github.com/MarvieSolis/clicky-game" target="_blank" class="repo">View Repo</a>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Languages / Technology</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">HTML5</h6>
+                            <h6 class="projectDetailsText">CSS3</h6>
+                            <h6 class="projectDetailsText">Bootstrap 4</h6>
+                            <h6 class="projectDetailsText">jQuery</h6>
+                            <h6 class="projectDetailsText">Axios</h6>
+                            <h6 class="projectDetailsText">AJAX</h6>
+                            <h6 class="projectDetailsText">APIs</h6>
                         </div>
                     </div>
-                    <div class="animated flipInY card" style="width: 13rem; height: 32rem;">
-                        <a href="https://marvie-c-solis-nyt-react.herokuapp.com/" target="_blank">
-                            <img class="card-img-top" src="./assets/images/nytimes.png" alt="New York Times scraper with React">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="projectHeading">NY Times: React</h4>
-                            <p class="card-text">A website that allows users to search up articles via the New York Times API 
-                                and save them onto a database.
-                            </p>
-                            <a href="https://github.com/MarvieSolis/NewYorkTimes-Re" target="_blank" class="repo">View Repo</a>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Repo / Site</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">
+                                <a href="https://github.com/lakegapo/rentployment" target="_blank" alt="rentployment">View
+                                    Repo
+                                </a>
+                            </h6>
+                            <h6 class="projectDetailsText">
+                                <a href="https://lakegapo.github.io/rentployment/" target="_blank" alt="rentployment">View
+                                    Site
+                                </a>
+                            </h6>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
+
+    <!-- Post.It -->
+    <div id="project2Overlay" class="overlay">
+
+        <!-- Overlay content -->
+        <div class="container-fluid overlay-content">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="projectNumber">2 of 4</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <button class="projectNav" onClick="twoToone()">&larr;</button>
+                    <button class="projectNav" onClick="closeProject2()">&times;</button>
+                    <button class="projectNav" onClick="twoTothree()">&rarr;</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 projectHeader">
+                    <h1>Post.It: A Blogging Site</h1>
+                    <h6>by Team Snowstorm</h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 project">
+                    <h2 class="projectOverlayHeading">Project Description</h2>
+                    <p class="projectDescription">Post.It is a blogging site that allows users to create an account, view
+                        posts, create posts, comment on posts, vote on posts, and create categories. There are many blogging
+                        sites out there including Reddit, Tumblr, and many more. We wanted to create a blogging site that
+                        is simple, easy-to-use, and user friendly. This site organizes its post based on time posted, category,
+                        or author.
+                    </p>
+                    <p class="projectDescription">Post.It utilizes a MySQL database to store user information, categories,
+                        posts, and comments. With this database, we are able to incorperate user authentification and link
+                        user's to their activity such as posts and comments. An Express server is used to connect to the
+                        MySQL database and access the routes defined to execute our Create, Read, Update, and Delete functions.
+                    </p>
+                    <p class="projectDescription">For future developments, we wish to add search functionality so users can
+                        find other users and posts. We also want to include voting on comments, creating comment threads,
+                        password resets, and other functionalities regarding posts such as scraping linked sites for content
+                        and editting posts and comments.
+                    </p>
+                    <h2 class="projectOverlayHeading">Screenshots</h2>
+                    <h6 class="screenshotCaption">Database Visualization</h6>
+                    <img class="screenshot" src="./assets/screenshots/postItDB.png">
+                    <h6 class="screenshotCaption">Home Page: Posts are visible.</h6>
+                    <img class="screenshot" src="./assets/screenshots/postItHome.PNG">
+                    <h6 class="screenshotCaption">Sign-In / Sign-Up: User account sign in and account creation.</h6>
+                    <img class="screenshot" src="./assets/screenshots/postItSignIn.PNG">
+                    <h6 class="screenshotCaption">Create a Post: Users can create a post then assign it to a category.</h6>
+                    <img class="screenshot" src="./assets/screenshots/postItPost.PNG">
+                    <h6 class="screenshotCaption">Create a Category: Users can create a category to assign posts.</h6>
+                    <img class="screenshot" src="./assets/screenshots/postItCategory.PNG">
+                </div>
+                <div class="col-md-4 project">
+                    <h2 class="projectOverlayHeading">Project Details</h2>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Role</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Frontend Developer, Frontend Lead</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Date</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">August 12, 2018</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Team Snowstorm</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Marvie Solis</h6>
+                            <h6 class="projectDetailsText">Jason Hong</h6>
+                            <h6 class="projectDetailsText">Eddie Borja</h6>
+                            <h6 class="projectDetailsText">Jonathan Mai</h6>
+                            <h6 class="projectDetailsText">Hayden VonCannon</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Languages / Technology</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">NodeJS</h6>
+                            <h6 class="projectDetailsText">Sequelize</h6>
+                            <h6 class="projectDetailsText">Bootstrap 4</h6>
+                            <h6 class="projectDetailsText">Handlebars</h6>
+                            <h6 class="projectDetailsText">Express</h6>
+                            <h6 class="projectDetailsText">PassPortJS</h6>
+                            <h6 class="projectDetailsText">bcrypt</h6>
+                            <h6 class="projectDetailsText">Heroku</h6>
+                            <h6 class="projectDetailsText">JawsDB</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Repo / Site</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">
+                                <a href="https://github.com/hvoncannon/project2" target="_blank" alt="Post.It">View Repo
+                                </a>
+                            </h6>
+                            <h6 class="projectDetailsText">
+                                <a href="https://shielded-brushlands-80704.herokuapp.com/" target="_blank" alt="Post.It">View
+                                    Site
+                                </a>
+                            </h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Who's Down? -->
+    <div id="project3Overlay" class="overlay">
+
+        <!-- Overlay content -->
+        <div class="container-fluid overlay-content">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="projectNumber">3 of 4</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <button class="projectNav" onClick="threeTotwo()">&larr;</button>
+                    <button class="projectNav" onClick="closeProject3()">&times;</button>
+                    <button class="projectNav" onClick="threeTofour()">&rarr;</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 projectHeader">
+                    <h1>Who's Down?: A Social Meetup App</h1>
+                    <h6>by Team Snowstorm</h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 project">
+                    <h2 class="projectOverlayHeading">Project Description</h2>
+                    <p class="projectDescription">Who's Down? is a social meetup app with the purpose of bringing people
+                        with common interests together. The emphasis lies on users meeting up via events. With so many applications
+                        such as Meetup, Facebook, and other social media platforms being used to host events, information
+                        can be scattered. Who's down allows all the event information to be centered on one application.
+                        Users can sign in, create an event within the specified categories, and join other events as well.
+                        When creating an event, users can specify the activity, date, time, location, event description,
+                        and other details. On each event page, users can communicate with each other through comments on
+                        the page thread.
+                    </p>
+                    <p class="projectDescription">Who's Down utilizes a MongoDB database and is structured using ReactJS.
+                        Within the database, user information, events, categories, and comments are stored. User authentification
+                        is required via Google OAuth to allow users to create and join events.
+                    </p>
+                    <p class="projectDescription">For future developments, we wish to add an edit feature so users can edit
+                        their comments and event details. We would also like to add a category creation, as our current built-in
+                        categories are used to prevent redundant categories such as "car" and "cars".
+                    </p>
+                    <h2 class="projectOverlayHeading">Screenshots</h2>
+                    <h6 class="screenshotCaption">Who's Down IN PROGRESS</h6>
+
+                </div>
+                <div class="col-md-4 project">
+                    <h2 class="projectOverlayHeading">Project Details</h2>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Role</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Frontend Developer</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Date</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">October 6, 2018</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Team Snowstorm</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Marvie Solis</h6>
+                            <h6 class="projectDetailsText">Jason Hong</h6>
+                            <h6 class="projectDetailsText">Eddie Borja</h6>
+                            <h6 class="projectDetailsText">Jonathan Mai</h6>
+                            <h6 class="projectDetailsText">Hayden VonCannon</h6>
+                            <h6 class="projectDetailsText">Fletcher Bunales</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Languages / Technology</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">ReactJS</h6>
+                            <h6 class="projectDetailsText">MongoDB</h6>
+                            <h6 class="projectDetailsText">Bootstrap 4</h6>
+                            <h6 class="projectDetailsText">NodeJS</h6>
+                            <h6 class="projectDetailsText">Express</h6>
+                            <h6 class="projectDetailsText">PassPortJS</h6>
+                            <h6 class="projectDetailsText">bcrypt</h6>
+                            <h6 class="projectDetailsText">Google OAuth</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Repo / Site</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">
+                                <a href="https://github.com/lakegapo/project3" target="_blank" alt="Who's Down?">View Repo
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- New York Times w/ REACT -->
+    <div id="project4Overlay" class="overlay">
+
+        <!-- Overlay content -->
+        <div class="container-fluid overlay-content">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="projectNumber">4 of 4</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <button class="projectNav" onClick="fourTothree()">&larr;</button>
+                    <button class="projectNav" onClick="closeProject4()">&times;</button>
+                    <button class="projectNav" onClick="fourToone()">&rarr;</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 projectHeader">
+                    <h1>New York Times w/ React</h1>
+                    <h6>by Marvie Solis</h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 project">
+                    <h2 class="projectOverlayHeading">Project Description</h2>
+                    <p class="projectDescription">This website allows users to view and save articles from The New York Times
+                        via their API. Users enter a topic of their choice, the start year, and the end year in the search
+                        component. The New York Times API then returns results regarding that topic between the specified
+                        window of years entered in the Results component. Each article displays their title, date, and a
+                        green save button. Clicking on the save button will save the article into the MongoDB database. Refreshing
+                        the page will cause the search results to disappear, but the articles that were saved previously
+                        to appear in the Saved component. Articles in the Saved component present the same data as in the
+                        Results component, but are equipped with a delete button instead, which will remove the article from
+                        the database.
+                    </p>
+                    <p class="projectDescription">This website utilizes MongoDB, Express, ReactJS, and NodeJS (MERN) to create
+                        the website's client-side and server-side functionality. MongoDB is used to create a database to
+                        store all the user saved articles. Functionality within the React components allows users to also
+                        delete articles that have previously been saved. Article.js contains the schema for the articles,
+                        which only consists of the title, date, and URL to the article. Express and Node are used to hook
+                        up the backend with the frontend, as well as set up routes that the site can hit in order to perform
+                        the API and database functions. server.js sets up the server that the site will run on. Also on server.js,
+                        routes are used via Router to access api/articles to perform the necessary actions. With ReactJS,
+                        the site is created using 5 main components. These components are Header.js, Search.js, Results.js,
+                        Saved.js, and Main.js. Header.js contains the banner for the site. Search.js performs the search
+                        functionality of the site by accessing the New York Times API via Axios. Results.js is where the
+                        results from the search are displayed. Saved.js renders the saved articles within the database. Main.js
+                        compiles all of the components together and exports them into App.js.
+                    </p>
+                    <h2 class="projectOverlayHeading">Screenshots</h2>
+                    <h6 class="screenshotCaption">Home Page: Search, results, and saved components are visible.</h6>
+                    <img class="screenshot" src="./assets/screenshots/nytHome.PNG">
+                    <h6 class="screenshotCaption">Search: Users can enter a topic and a range of years to search for articles.</h6>
+                    <img class="screenshot" src="./assets/screenshots/nytSearch.PNG">
+                    <h6 class="screenshotCaption">Results: The returned articles are posted here with an option to save them.</h6>
+                    <img class="screenshot" src="./assets/screenshots/nytResults.PNG">
+                    <h6 class="screenshotCaption">Saved articles are posted here with an option to delete them.</h6>
+                    <img class="screenshot" src="./assets/screenshots/nytSaved.PNG">
+                </div>
+                <div class="col-md-4 project">
+                    <h2 class="projectOverlayHeading">Project Details</h2>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Role</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">Creator</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Date</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">September 16, 2018</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Languages / Technology</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">ReactJS</h6>
+                            <h6 class="projectDetailsText">MongoDB</h6>
+                            <h6 class="projectDetailsText">Bootstrap 4</h6>
+                            <h6 class="projectDetailsText">NodeJS</h6>
+                            <h6 class="projectDetailsText">Express</h6>
+                            <h6 class="projectDetailsText">Axios</h6>
+                            <h6 class="projectDetailsText">Heroku</h6>
+                        </div>
+                    </div>
+                    <div class="row projectRow">
+                        <div class="col-sm-4">
+                            <h6 class="projectDetails">Repo / Site</h6>
+                        </div>
+                        <div class="col-sm-8">
+                            <h6 class="projectDetailsText">
+                                <a href="https://github.com/MarvieSolis/NewYorkTimes-React" target="_blank" alt="NYT with REACT">View
+                                    Repo
+                                </a>
+                            </h6>
+                            <h6 class="projectDetailsText">
+                                <a href="https://marvie-c-solis-nyt-react.herokuapp.com/" target="_blank" alt="NYT with REACT">View
+                                    Site
+                                </a>
+                            </h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid" id="portfolioSection">
+        <a id="portfolioLink" name="projects"></a>
+
+        <div class="animatedParent container-fluid" id="portfolioHeaderMain">
+            <div class="row justify-content-center">
+                <h1 class="animated growIn" id="portfolioHeader">Projects</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <a class="projectLink" onClick="openProject1()">
+                <img class="projectImage" src="./assets/images/rentployment.PNG" alt="Rentployment">
+            </a>
+            <a class="projectLink" onClick="openProject2()">
+                <img class="projectImage" src="./assets/images/postit.png" alt="Post.it">
+            </a>
+            <a class="projectLink" onClick="openProject3()">
+                <img class="projectImage" src="./assets/images/WhosDown.png" alt="Who's Down?">
+            </a>
+            <a class="projectLink" onClick="openProject4()">
+                <img class="projectImage" src="./assets/images/nytimes.png" alt="New York Times with ReactJS">
+            </a>
+        </div>
+        
     </div>
 
     <div class="container-fluid" id="fourthSection"></div>
@@ -360,25 +788,26 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <form id="contact-form" action="https://formspree.io/marvie_solis@ymail.com" method="POST">
-                    <div class="animated pulse form-group">
+                    <div class="form-group">
                         <label for="userName">Name</label>
                         <input name="name" type="text" class="form-control" id="userName" placeholder="Enter name here">
                     </div>
-                    <div class="animated pulse form-group">
+                    <div class="form-group">
                         <label for="userEmail">Email address</label>
                         <input name="_replyto" type="email" class="form-control" id="userEmail" aria-describedby="email" placeholder="Enter email">
                     </div>
-                    <div class="animated pulse form-group">
+                    <div class="form-group">
                         <label for="userMessage">Message</label>
                         <textarea name="message" class="form-control" id="userMessage" rows="3"></textarea>
                     </div>
                     <div class="row justify-content-center">
-                        <button class="animated growIn" type="submit" id="sendMessage">Send</button>
+                        <button type="submit" id="sendMessage">Send</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     <div class="container-fluid" id="contactSection2">
         <a id="contactLink" name="contact"></a>
         <div class="row">

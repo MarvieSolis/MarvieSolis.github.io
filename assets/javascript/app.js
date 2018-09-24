@@ -6,6 +6,85 @@
 
 // setTimeout(loadPage, 3000);
 
+function oneTofour() {
+    document.getElementById("project1Overlay").style.width = "0%";
+    document.getElementById("project4Overlay").style.width = "100%";
+}
+
+/* Open when someone clicks on the span element */
+function openProject1() {
+    document.getElementById("project1Overlay").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeProject1() {
+    document.getElementById("project1Overlay").style.width = "0%";
+}
+
+function oneTotwo() {
+    document.getElementById("project1Overlay").style.width = "0%";
+    document.getElementById("project2Overlay").style.width = "100%";
+}
+
+function openProject2() {
+    document.getElementById("project2Overlay").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeProject2() {
+    document.getElementById("project2Overlay").style.width = "0%";
+}
+
+function twoTothree() {
+    document.getElementById("project2Overlay").style.width = "0%";
+    document.getElementById("project3Overlay").style.width = "100%";
+}
+
+function twoToone() {
+    document.getElementById("project2Overlay").style.width = "0%";
+    document.getElementById("project1Overlay").style.width = "100%";
+}
+
+function openProject3() {
+    document.getElementById("project3Overlay").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeProject3() {
+    document.getElementById("project3Overlay").style.width = "0%";
+}
+
+function threeTofour() {
+    document.getElementById("project3Overlay").style.width = "0%";
+    document.getElementById("project4Overlay").style.width = "100%";
+}
+
+function threeTotwo() {
+    document.getElementById("project3Overlay").style.width = "0%";
+    document.getElementById("project2Overlay").style.width = "100%";
+}
+
+function openProject4() {
+    document.getElementById("project4Overlay").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeProject4() {
+    document.getElementById("project4Overlay").style.width = "0%";
+}
+
+function fourToone() {
+    document.getElementById("project4Overlay").style.width = "0%";
+    document.getElementById("project1Overlay").style.width = "100%";
+}
+
+function fourTothree() {
+    document.getElementById("project4Overlay").style.width = "0%";
+    document.getElementById("project3Overlay").style.width = "100%";
+}
+
+
+
 $("#home").click(function (event) {
 
     var target = $("#homeLink");
