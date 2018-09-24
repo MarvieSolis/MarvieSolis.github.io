@@ -315,8 +315,17 @@ html,body
     width: 80%;
 }
 
-#aboutMeMore {
+#learnMore {
     color: #0adecb;
+}
+
+.timelineText {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.last {
+    margin-bottom: 30px;
 }
 
 

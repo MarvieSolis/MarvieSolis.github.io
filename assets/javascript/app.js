@@ -8,6 +8,15 @@ var loadPage = function() {
 
 setTimeout(loadPage, 3000);
 
+/* Open when someone clicks on the span element */
+function openAboutMeSlide() {
+    document.getElementById("aboutMeSlide").style.width = "100%";
+}
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeAboutMeSlide() {
+    document.getElementById("aboutMeSlide").style.width = "0%";
+}
+
 function oneTofour() {
     document.getElementById("project1Overlay").style.width = "0%";
     document.getElementById("project4Overlay").style.width = "100%";
