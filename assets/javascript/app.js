@@ -84,9 +84,9 @@ function closeProject4() {
     document.getElementById("project4Overlay").style.width = "0%";
 }
 
-function fourToone() {
+function fourTofive() {
     document.getElementById("project4Overlay").style.width = "0%";
-    document.getElementById("project1Overlay").style.width = "100%";
+    document.getElementById("project5Overlay").style.width = "100%";
 }
 
 function fourTothree() {
@@ -94,6 +94,43 @@ function fourTothree() {
     document.getElementById("project3Overlay").style.width = "100%";
 }
 
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeProject5() {
+    document.getElementById("project5Overlay").style.width = "0%";
+}
+
+function openProject5() {
+    document.getElementById("project5Overlay").style.width = "100%";
+}
+
+function fiveTofour() {
+    document.getElementById("project5Overlay").style.width = "0%";
+    document.getElementById("project4Overlay").style.width = "100%";
+}
+
+function fiveTosix() {
+    document.getElementById("project5Overlay").style.width = "0%";
+    document.getElementById("project6Overlay").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeProject6() {
+    document.getElementById("project6Overlay").style.width = "0%";
+}
+
+function openProject6() {
+    document.getElementById("project6Overlay").style.width = "100%";
+}
+
+function sixTofive() {
+    document.getElementById("project6Overlay").style.width = "0%";
+    document.getElementById("project5Overlay").style.width = "100%";
+}
+
+function sixToone() {
+    document.getElementById("project6Overlay").style.width = "0%";
+    document.getElementById("project1Overlay").style.width = "100%";
+}
 
 
 $("#home").click(function (event) {
