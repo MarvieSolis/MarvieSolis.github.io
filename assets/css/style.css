@@ -349,6 +349,7 @@ html,body
 }
 
 
+
 .fas fa-arrow-circle-down {
     color:white;
 }
@@ -845,6 +846,14 @@ a {
 
 .screenshot {
     width: 100%;
+}
+
+.portrait {
+    width: 300px;
+}
+
+.clickMe {
+    color: white;
 }
 
 #loaderContainer {
