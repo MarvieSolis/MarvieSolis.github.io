@@ -848,6 +848,16 @@ a {
     width: 100%;
 }
 
+.skillWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .portrait {
     width: 300px;
 }
