@@ -970,7 +970,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-10 projectHeader">
-                        <h1>The Pick n Roll: SB Nation Web Scraper</h1>
+                        <h1>Everything Gaming</h1>
                         <h6>by Marvie Solis</h6>
                     </div>
                 </div>
@@ -978,39 +978,33 @@
                     <div class="col-md-6 project">
                         <h2 class="projectOverlayHeading">Project Description</h2>
                         <p class="projectDescription">
-                            The Pick and Roll is a basketball news website that obtains its information by scraping SBNation via Cheerio and MongoDB.
-                            Users are able to update the website by pressing the "scrape" link at the top left of the navbar,
-                            comment on articles, and delete comments. The website also allows users to sort the articles
-                            by date either from newest to oldest or vice versa. The home screen contains information for
-                            each article such as an image, title, author name, date and time posted, a link to the article,
-                            and a link to comment. The article detail page contains the same information, but with a short
-                            summary, a section for comments, and a comment form.</p>
+                            Everything Gaming is a website dedicated to being the hub for everything gaming related. 
+                            It aims to consolidate gaming related content into one website. 
+                            Users can sign in and create posts such as walkthroughs, reviews, and blog posts that can contain videos embedded from 
+                            other sites and much more. 
+                            This disables the need to search multiple forums for gaming tips, narrowing the search to one site while concentrating on 
+                            the author, game, and type of post. 
+                            Users can also comment on other posts, upvote and downvote comments and posts, and visit other user profiles.
+                        </p>
                         <p class="projectDescription">
-                            This program utilizes MongoDB, node, cheerio, handlebars, jQuery and express to create and access a database, run a server,
-                            send users to desired routes, and link HTML and CSS files. This enables the program to utilize
-                            it's internal database of stored articles and comments from SBNation and have it updated in realtime.
-                            The database is formed when the user "scrapes" SBNation by pressing the "scrape" link. Via routes.js,
-                            Cheerio sends a request to SBNation's site and grabs the data using jQuery and returns it. This
-                            information is stored in an object which is sent to the Article collection, which is then accessed
-                            by Handlebars to display the desired information on the page. When a user comments on an article,
-                            the user's name and comment are stored in an object, which is sent to the Comment collection.
-                            This information is then linked to the article via the ref keyword and Handlebars grabs the data
-                            it needs to present it on the page.</p>
+                            This program utilizes MySQL, Express, ReactJS, and NodeJS. Tables for the users, posts, and comments are stored within a database. 
+                            This information is then accessed via Node and Express by using API calls. 
+                            Once the data is retrieved, it is sent to the React App where it is rendered onto the corresponding pages. 
+                            An external gaming API is being considered in order to verify the game titles entered by users. 
+                            For login authentification, PassPortJS is being considered as well as Google OAuth.
+                        </p>
                         <p class="projectDescription">
-                            For future development, I would like to be able to display the whole article on this site alone. FOr SB Nation, they use
-                            lazy loading and load their paragraphs in an unorthodox way so this can prove to be challenging.
+                            The project is still on-going with an estimated completion date of November 14th, 2018.
                         </p>
                         <h2 class="projectOverlayHeading">Screenshots</h2>
-                        <h6 class="screenshotCaption">Home Screen: Where articles will populate when SCRAPE is pressed.</h6>
-                        <img class="screenshot" src="./assets/screenshots/pnrhome.PNG">
-                        <h6 class="screenshotCaption">Article Detail: Shows information from the article with the addition
-                            of a short summary.
-                        </h6>
-                        <img class="screenshot" src="./assets/screenshots/pnrarticle.PNG">
-                        <h6 class="screenshotCaption">Comments: Part of the Article Detail page, here is a form to post a
-                            comment.
-                        </h6>
-                        <img class="screenshot" src="./assets/screenshots/pnrcomment.PNG">
+                        <h6 class="screenshotCaption">MySQL Database Visualization</h6>
+                        <img class="screenshot" src="./assets/screenshots/egDatabase.PNG">
+                        <h6 class="screenshotCaption">Landing Page: Intro with user login and explore button.</h6>
+                        <img class="screenshot" src="./assets/screenshots/egLanding.PNG">
+                        <h6 class="screenshotCaption">User profile page where the user's information and posts are displayed.</h6>
+                        <img class="screenshot" src="./assets/screenshots/egUser.PNG">
+                        <h6 class="screenshotCaption">Create post page where users can create a walkthrough, blog, or review.</h6>
+                        <img class="screenshot" src="./assets/screenshots/egCreate.PNG">
                     </div>
                     <div class="col-md-4 project">
                         <h2 class="projectOverlayHeading">Project Details</h2>
@@ -1027,7 +1021,7 @@
                                 <h6 class="projectDetails">Date</h6>
                             </div>
                             <div class="col-sm-8">
-                                <h6 class="projectDetailsText">Aug 26, 2018</h6>
+                                <h6 class="projectDetailsText">October 17, 2018</h6>
                             </div>
                         </div>
                         <div class="row projectRow">
@@ -1035,32 +1029,23 @@
                                 <h6 class="projectDetails">Languages / Technology</h6>
                             </div>
                             <div class="col-sm-8">
-                                <h6 class="projectDetailsText">MongoDB</h6>
-                                <h6 class="projectDetailsText">Mongoose</h6>
-                                <h6 class="projectDetailsText">Bootstrap 4</h6>
+                                <h6 class="projectDetailsText">MySQL</h6>
                                 <h6 class="projectDetailsText">Express</h6>
-                                <h6 class="projectDetailsText">Handlebars</h6>
-                                <h6 class="projectDetailsText">Cheerio</h6>
-                                <h6 class="projectDetailsText">Request</h6>
-                                <h6 class="projectDetailsText">JQuery</h6>
+                                <h6 class="projectDetailsText">ReactJS</h6>
+                                <h6 class="projectDetailsText">NodeJS</h6>
+                                <h6 class="projectDetailsText">Bootstrap 4</h6>
                             </div>
                         </div>
                         <div class="row projectRow">
                             <div class="col-sm-4">
-                                <h6 class="projectDetails">Repo / Site</h6>
+                                <h6 class="projectDetails">Repo</h6>
                             </div>
                             <div class="col-sm-8">
                                 <h6 class="projectDetailsText">
-                                    <a class="clickMe" href="https://github.com/MarvieSolis/mongodb-scraping" target="_blank" alt="Pick n Roll">View
+                                    <a class="clickMe" href="https://github.com/MarvieSolis/EverythingGaming" target="_blank" alt="Everything Gaming">View
                                         Repo
                                     </a>
                                 </h6>
-                                <h6 class="projectDetailsText">
-                                    <a class="clickMe" href="https://marvie-c-solis-news-scraper.herokuapp.com/" target="_blank" alt="Pick n Roll">View
-                                        Site
-                                    </a>
-                                </h6>
-
                             </div>
                         </div>
                     </div>
@@ -1099,7 +1084,7 @@
                     <img class="projectImage" src="./assets/images/clicky.png" alt="Clicky-game: Fortnite">
                 </a>
                 <a class="projectLink" onClick="openProject6()">
-                    <img class="projectImage" src="./assets/images/picknroll.png" alt="Pick n Roll">
+                    <img class="projectImage" src="./assets/images/EverythingGaming.png" alt="Everything Gaming">
                 </a>
             </div>
 
