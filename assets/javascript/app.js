@@ -141,17 +141,6 @@ $("#home").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
 });
 
@@ -162,17 +151,6 @@ $("#portfolio").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 160
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
 });
 
@@ -183,17 +161,6 @@ $("#about").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 200
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
 });
 
@@ -208,20 +175,7 @@ $("#contact").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 200
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
-
-
 });
 
 $("#aboutMeButtonStyle").click(function (event) {
@@ -231,20 +185,7 @@ $("#aboutMeButtonStyle").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 200
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
-
-
 });
 
 $("#skills").click(function (event) {
@@ -254,20 +195,7 @@ $("#skills").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 160
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
-
-
 });
 
 $("#home1").click(function (event) {
@@ -277,17 +205,6 @@ $("#home1").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
 });
 
@@ -298,17 +215,6 @@ $("#portfolio1").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 160
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
 });
 
@@ -319,17 +225,6 @@ $("#about1").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 200
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
 });
 
@@ -344,20 +239,7 @@ $("#contact1").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 200
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
-
-
 });
 
 
@@ -368,20 +250,7 @@ $("#skills1").click(function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: target.offset().top - 160
-    }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-        } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-        };
     });
-
-
 });
 
 
