@@ -39,6 +39,9 @@
     "typeface-nunito": "^0.0.72",
     "url-join": "^4.0.0"
   },
+  "resolutions": {
+    "sharp": "0.24.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "husky": "^2.2.0",
