@@ -3,28 +3,26 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Bio from "../components/bio"
 import PostCard from "../components/postCard"
 
 import "../style/normalize.css"
 import "../style/all.scss"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = "Marvie Solis"
   const posts = data.allMarkdownRemark.edges
-  let postCounter = 0
+  let postCounter =0;
 
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Blog"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        title="Portfolio"
+        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`, `portfolio`, `developer`]}
       />
-      {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
+            Hello! I am a web developer / motion designer based in Los Angeles, CA.<br/>Let's create!
           </h2>
         </header>
       )}
@@ -64,7 +62,6 @@ const indexQuery = graphql`
             date(formatString: "MMMM D, YYYY")
             title
             description
-            tags
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

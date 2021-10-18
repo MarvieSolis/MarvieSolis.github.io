@@ -493,6 +493,7 @@ body {
   font-size: 3.4rem;
   /* max-width: 70%; */
   text-align: center;
+  mix-blend-mode: difference;
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
@@ -523,15 +524,18 @@ body {
   line-height: 1.15em;
   text-align: left;
   color: $color-body-font;
+  mix-blend-mode: difference;
 }
 
 .post-card.no-image:hover .post-card-title {
   text-decoration: underline;
+  mix-blend-mode: difference;
 }
 
 @media (max-width: 1200px) {
   .post-card.no-image .post-card-title {
     font-size: 3.4rem;
+    mix-blend-mode: difference;
   }
   .post-card.no-image .post-card-date,
   .post-card.no-image .post-card-body,

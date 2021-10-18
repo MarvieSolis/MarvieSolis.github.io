@@ -12,8 +12,8 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <h1>404 NOT FOUND. This page doesn't exist.</h1>
+        <p>What are you trying to find, huh? Why you being sus?</p>
       </Layout>
     )
   }

@@ -1,9 +1,8 @@
 module.exports = {
-  name: 'London Night and Day',
+  name: 'Marvie Solis',
   shortName: '',
-  description: 'A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery',
+  description: 'A portfolio consisting of my work and information about me',
   url: 'https://www.jooplaan.com', // Domain of your site without prefix!
   prefix: '/',
-  author: 'jooplaan',
-  twitter: ''
+  author: 'Marvie Solis',
 }

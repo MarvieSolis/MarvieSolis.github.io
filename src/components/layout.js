@@ -30,13 +30,17 @@ const Layout = props => {
                 <Link to={`/`}>Home</Link>
               </li> */}
               <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+                <Link to={`/contact`}>Contact</Link>
               </li>
               <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li>
-              <li className="nav-tags" role="menuitem">
-                <Link to={`/tags`}>Tags</Link>
+                <a
+                  href="./RESUME.pdf"
+                  title="Resume"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
               </li>
             </ul>
           </nav>
@@ -47,32 +51,32 @@ const Layout = props => {
           </div>
           <div className="site-head-right">
             <div className="social-links">
-              <a
-                href="https://www.facebook.com"
-                title="Facebook"
+            <a
+                href="https://www.linkedin.com/in/marvie-c-solis"
+                title="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                LinkedIn
               </a>
               <a
-                href="https://twitter.com"
-                title="Twitter"
+                href="https://www.instagram.com/marviesolis"
+                title="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                Instagram
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
+              <a
+                href="https://www.tiktok.com/@marviesolis?"
+                title="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                RSS
-              </Link>
+                TikTok
+              </a>
               <a
-                href="https://github.com/jooplaan/gatsby-london-night-and-day"
+                href="https://github.com/MarvieSolis"
                 title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
