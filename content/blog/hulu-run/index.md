@@ -7,6 +7,9 @@ description: A dreamy video consisting of various scene's throughout Hulu's RUN 
 
 <p style="text-align:center;">This video was given a Shorty Award for <a href="https://shortyawards.com/13th/sarah-paulson-is-your-mom-2" target="_blank">BEST TWITTER VIDEO</a>.</p>
 
-<a href="https://shortyawards.com/13th/sarah-paulson-is-your-mom-2" target="_blank">
-         <img alt="Sarah Paulson Is Your Mom" src="./run-screenshot.jpg"/>
-</a>
+<div style="position:relative; text-align:center;">
+    <a href="https://shortyawards.com/13th/sarah-paulson-is-your-mom-2" target="_blank">
+        <img alt="Sarah Paulson Is Your Mom" src="./run-screenshot.jpg"/>
+    </a>
+    <a href="https://shortyawards.com/13th/sarah-paulson-is-your-mom-2" target="_blank" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); filter: drop-shadow(5px 5px 5px #000); font-weight:700; color:white; text-decoration:none;">Click to view</a>
+</div>

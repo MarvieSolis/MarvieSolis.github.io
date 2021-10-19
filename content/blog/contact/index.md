@@ -1,8 +1,15 @@
 ---
 title: Contact Me
 tags: [developer, motion, designer]
-description: I would love to work together and create something special. Let's get it!
+thumbnail: ./contact.jpg
 ---
-<h3 style="text-align:center">Personal Info</h3>
-<p style="text-align:center">Marvie_Solis@ymail.com</p>
-<p style="text-align:center">(310) 698-9248</p>
+
+<p style="text-align:center">
+    <a href="mailto:marvie_solis@ymail.com">Marvie_Solis@ymail.com</a>
+</p>
+
+<p style="text-align:center">
+    Don't hesitate to reach out to me! I am always down to collaborate, explore new opportunites, and meet other talented individuals.
+    I can also be reached through my multiple social media accounts. I am constantly active on them, creating content, and responding to comments and messages. 
+    Can't wait to hear from you!
+</p>
